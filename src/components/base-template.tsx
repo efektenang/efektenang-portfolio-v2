@@ -9,11 +9,20 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
   const items1: MenuProps['items'] = [
     {
       "key": "1",
-      "label": <Link href={'/dashboard'}>Home</Link>,
+      "label": <Link href={'#home'}>Home</Link>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
-        "marginRight": 5
+        "marginRight": 3
+      }
+    },
+    {
+      "key": "5",
+      "label": <Link href={'#experience'}>Experiences</Link>,
+      "style": {
+        "lineHeight": "25px",
+        "borderRadius": 20,
+        "marginRight": 3
       }
     },
     {
@@ -22,7 +31,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
-        "marginRight": 5
+        "marginRight": 3
       }
     },
     {
@@ -31,7 +40,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
-        "marginRight": 5
+        "marginRight": 3
       }
     },
     {
@@ -40,7 +49,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
-        "marginRight": 5
+        "marginRight": 3
       }
     }
   ];
@@ -48,7 +57,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
   return (
     <Layout className="bg-base-color">
       <Header
-        className='h-11 items-center w-[600px] rounded-full bg-primary-color'
+        className='h-11 items-center w-[700px] rounded-full bg-primary-color'
         style={{
           display: 'flex',
           position: 'fixed',
