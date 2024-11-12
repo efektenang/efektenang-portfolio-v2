@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       textColor: {
         "base-color": "#2191FB",
-        "primary-color": "#A6B8CA",
+        "primary-color": "#3696B6",
         danger: "#F33A3A",
         success: "#39B429",
         pending: "#FD7900",
