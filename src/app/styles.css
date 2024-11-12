@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Sen:wght@400..800&display=swap');
+
+* {
+  font-family: "Sen", sans-serif;
+  box-sizing: border-box;
+}
+
+:where(.css-dev-only-do-not-override-1jdqrid)[class^='ant-typography'],
+:where(.css-dev-only-do-not-override-1jdqrid)[class*=' ant-typography'] {
+  font-family: "Sen", sans-serif;
+  box-sizing: border-box;
+}
