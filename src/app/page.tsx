@@ -2,10 +2,13 @@ import WorkExperience from "@/components/work-experience.layout";
 import { Col, Image, Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import WorkExperienceMock from "@/assets/mock/work-experiences.json";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import PhilosophyLayout from "@/components/philosophy";
 
 export default function Home() {
   return (
     <Content>
+      <BackgroundBeams />
       <Row className="w-full flex py-[90px]" id="home">
         <Col className="flex items-center">
           <Image
@@ -57,6 +60,10 @@ export default function Home() {
             }
           </div>
         </Row>
+      </Row>
+
+      <Row className="my-[70px] h-[500px] w-full bg-gray-600 flex justify-between">
+        <PhilosophyLayout />
       </Row>
     </Content>
   );

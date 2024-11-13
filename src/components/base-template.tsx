@@ -82,7 +82,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
         {props?.children}
       </Layout>
       <Footer className='bg-base-color text-white' style={{ textAlign: 'center' }}>
-        Efektenang ©{new Date().getFullYear()} Made by ❤️
+        Efektenang ©{new Date().getFullYear()} Made with ❤️
       </Footer>
     </Layout>
   )
