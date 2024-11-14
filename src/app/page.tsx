@@ -1,43 +1,18 @@
-import WorkExperience from "@/components/work-experience.layout";
-import { Col, Image, Row } from "antd";
+import WorkExperience from "@/components/layouts/work-experience.layout";
+import { Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import WorkExperienceMock from "@/assets/mock/work-experiences.json";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import PhilosophyLayout from "@/components/philosophy";
+import HeaderLayout from "@/components/layouts/header.layout";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
     <Content>
       <BackgroundBeams />
       <Row className="w-full flex py-[90px]" id="home">
-        <Col className="flex items-center">
-          <Image
-            style={{
-              objectFit: 'cover',
-              objectPosition: '10% 40%',
-            }}
-            preview={false}
-            width={700}
-            height={500}
-            src="https://res.cloudinary.com/dpr6tofwx/image/upload/v1731404289/yjm16gd2pzh7hlsjhmav.jpg"
-          />
-        </Col>
-        <Col className="flex justify-items-center items-center" style={{
-          position: 'relative',
-          right: 40
-        }}>
-          <div>
-            <h1 className="text-white text-6xl leading-[60px] font-semibold">
-              I'm Muhammad Arizky,
-              <br /> A Fullstack Developer
-              <br />
-              <span className="text-gray-400">based in Indonesia.</span>
-            </h1>
-            <p className="text-white mt-5 w-[830px] text-lg">I am a Full-stack developer with expertise in Laravel, Node.js and Next.Js.
-              I have experience in developing scalable, secure, and reliable web applications using various frameworks and technologies.
-              I enjoy solving complex problems and am always enthusiastic about learning new skills.</p>
-          </div>
-        </Col>
+        <HeaderLayout />
       </Row>
 
       <Row className="mx-[80px] block" id="experience">
@@ -64,6 +39,10 @@ export default function Home() {
 
       <Row className="my-[70px] h-[500px] w-full bg-gray-600 flex justify-between">
         <PhilosophyLayout />
+      </Row>
+
+      <Row className="mx-[80px] flex flex-row gap-6" id="skillset">
+        <Skills />
       </Row>
     </Content>
   );
