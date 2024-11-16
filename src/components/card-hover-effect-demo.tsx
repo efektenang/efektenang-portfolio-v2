@@ -9,7 +9,7 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Fullstack Developer",
+    title: "Fullstack Web Developer",
     description:
       "Develop responsive and interactive user interfaces, manage server-side logic and backend services, integrate frontend elements with backend.",
     link: "#skillset",
