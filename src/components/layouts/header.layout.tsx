@@ -14,14 +14,14 @@ export default function HeaderLayout(): React.JSX.Element {
             objectPosition: '10% 40%',
           }}
           preview={false}
-          width={500}
+          width={700}
           height={500}
           src="https://res.cloudinary.com/dpr6tofwx/image/upload/v1731404289/yjm16gd2pzh7hlsjhmav.jpg"
         />
       </Col>
       <Col className="flex justify-items-center items-center" style={{
         position: 'relative',
-        right: 40
+        right: 90
       }}>
         <div>
           <h1 className="text-white text-6xl leading-[60px] font-semibold">

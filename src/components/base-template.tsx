@@ -45,7 +45,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "4",
-      "label": <Link href={'#'}>Contact Us</Link>,
+      "label": <Link href={'#contact-us'}>Contact Us</Link>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
