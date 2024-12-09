@@ -1,5 +1,5 @@
 import WorkExperience from "@/components/layouts/work-experience.layout";
-import { Row } from "antd";
+import { Col, Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import WorkExperienceMock from "@/assets/mock/work-experiences.json";
 import { BackgroundBeams } from "@/components/ui/background-beams";
@@ -8,6 +8,7 @@ import HeaderLayout from "@/components/layouts/header.layout";
 import Skills from "@/components/skills";
 import SocialMediaLayout from "@/components/layouts/social-media.layout";
 import { ProjectLayout } from "@/components/layouts/projects.layout";
+import OrderFormLayout from "@/components/layouts/order-form.layout";
 
 export default function Home() {
   return (
@@ -59,6 +60,21 @@ export default function Home() {
           <p className='text-[18px] text-gray-500 mt-3'>Based on my work and internship experience so far, I have created several projects and contributed to the team at the company.</p>
         </div>
         <ProjectLayout />
+      </Row>
+
+      <Row className="flex items-center justify-center gap-32 my-9" id="contact-us">
+        <Col>
+          <div className="w-[500px] mx-auto my-[50px]">
+            <h1 className='text-[40px] font-semibold text-white'>Let’s talk business</h1>
+            <p className='text-[18px] text-gray-500 mt-3'>Based on my work and internship experience so far, I have created several projects and contributed to the team at the company.</p>
+          </div>
+        </Col>
+
+        <Col span={8}>
+          <div className="mx-auto my-[50px]">
+            <OrderFormLayout />
+          </div>
+        </Col>
       </Row>
     </Content>
   );
