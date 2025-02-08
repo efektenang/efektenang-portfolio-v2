@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import React from "react";
 
 export const BentoGrid = ({
   className,
@@ -34,7 +35,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   url?: string
-}) => {
+}): React.JSX.Element => {
   return (
     <div
       className={cn(
@@ -45,7 +46,7 @@ export const BentoGridItem = ({
       {header}
       <Link href={url ?? '#'} target="_blank" className="group-hover/bento:translate-x-2 transition duration-200">
         {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <div className="text-lg lg:text-sm font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
         </div>
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">

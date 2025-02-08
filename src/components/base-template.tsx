@@ -1,11 +1,17 @@
-import { Layout, Menu, MenuProps } from "antd";
+'use client'
+
+import { DownOutlined, MenuOutlined } from "@ant-design/icons";
+import { Dropdown, Layout, Menu, MenuProps, Space } from "antd";
 import { Footer, Header } from "antd/es/layout/layout";
 import Link from "next/link";
+import { WindowWidth } from "./layouts/window-width";
 
 export interface IPortals {
   children: any
 }
 export default function BaseTemplate(props: IPortals): React.JSX.Element {
+  const windowWidth: number = WindowWidth()
+
   const items1: MenuProps['items'] = [
     {
       "key": "1",
@@ -27,7 +33,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "2",
-      "label": <Link href={'#'}>About</Link>,
+      "label": <Link href={'#about'}>About</Link>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -36,7 +42,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "3",
-      "label": <Link href={'#'}>Projects</Link>,
+      "label": <Link href={'#projects'}>Projects</Link>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -45,7 +51,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "4",
-      "label": <Link href={'#contact-us'}>Contact Us</Link>,
+      "label": <Link href={'#contact'}>Contact Me</Link>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -54,10 +60,27 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     }
   ];
 
+  const items2: MenuProps['items'] = [
+    {
+      "key": "1",
+      "label": <Dropdown menu={{ items: items1 }}>
+        <MenuOutlined style={{
+          fontWeight: "bold",
+          fontSize: 18
+        }} />
+      </Dropdown>,
+      "style": {
+        "lineHeight": "25px",
+        "borderRadius": 20,
+        "marginRight": 3
+      }
+    },
+  ]
+
   return (
     <Layout className="bg-base-color">
       <Header
-        className='h-11 items-center w-[700px] rounded-full bg-primary-color'
+        className={`h-11 items-center rounded-full bg-primary-color ${windowWidth < 510 ? 'w-[450px]' : 'w-[700px]'}`}
         style={{
           display: 'flex',
           position: 'fixed',
@@ -74,7 +97,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
           className='flex justify-end h-10 items-center bg-primary-color font-semibold'
           theme="dark"
           mode="horizontal"
-          items={items1}
+          items={windowWidth < 510 ? items2 : items1}
           style={{ flex: 1, minWidth: 0 }}
         />
       </Header>

@@ -50,7 +50,7 @@ export default function SocialMediaLayout(): React.JSX.Element {
           <div
             key={item.id}
             style={{
-              border: '1px solid #6b7280'
+              border: '0px solid #6b7280'
             }}
             className='w-[24vw] h-[140px] flex items-center justify-center'>
             <Link href={item.url} className='text-gray-500' target='_blank' title={item.title}>

@@ -5,6 +5,7 @@ import { Image } from "antd";
 import jadwalKuliah from "@/assets/images/jadwal-kuliah.png"
 import animeHub from "@/assets/images/anime-hub.png"
 import danmogotCheckout from "@/assets/images/danmogot-checkout.png"
+import mriImage from "@/assets/images/mri.png"
 
 export function ProjectLayout() {
   return (
@@ -33,7 +34,7 @@ const items = [
     description: "Marketplace website for ordering products at the Danmogot shop.",
     header: <Image src={danmogotCheckout.src} className="rounded-xl" />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
-    url: 'https://checkout.danmogot.com/portal/cart'
+    // url: 'https://checkout.danmogot.com/portal/cart'
   },
   {
     title: "Anime Hub",
@@ -50,16 +51,17 @@ const items = [
     url: 'https://github.com/efektenang/jadwal-genetika'
   },
   {
-    title: "The Power of Communication",
+    title: "Medical Raksasa Indonesia Admin Page",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+      "Excellence propels us to constantly seek out and implement groundbreaking solutions that set new industry standards.",
+    header: <Image height={140} src={mriImage.src} className="rounded-xl object-cover" />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
+    title: "Other repository projects",
     description: "Join the quest for understanding and enlightenment.",
     header: <Skeleton />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
+    url: 'https://github.com/efektenang?tab=repositories'
   }
 ];
