@@ -31,7 +31,7 @@ export default function Home(): React.JSX.Element {
   };
   return (
     <Content>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <Row className="w-full flex pt-[90px] items-center justify-center lg:justify-between" id="home">
         <HeaderLayout />
       </Row>
@@ -93,15 +93,15 @@ export default function Home(): React.JSX.Element {
         </Row>
         <Button
           onClick={() => scroll(scrollSocial, 'left')}
-          style={{ border: '2px solid white' }}
-          className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 bg-transparent text-white p-2 rounded-full shadow-md z-10"
+          style={{ border: '2px solid #fafafa40' }}
+          className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 bg-transparent text-[#fafafa74] p-2 rounded-full shadow-md z-10"
         >
           <LeftOutlined />
         </Button>
         <Button
           onClick={() => scroll(scrollSocial, 'right')}
-          style={{ border: '2px solid white' }}
-          className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 bg-transparent text-white p-2 rounded-full shadow-md z-10"
+          style={{ border: '2px solid #fafafa40' }}
+          className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 bg-transparent text-[#fafafa74] p-2 rounded-full shadow-md z-10"
         >
           <RightOutlined />
         </Button>
