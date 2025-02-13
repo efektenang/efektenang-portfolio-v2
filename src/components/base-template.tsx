@@ -80,7 +80,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
   return (
     <Layout className="bg-base-color">
       <Header
-        className={`h-11 items-center rounded-full bg-primary-color ${windowWidth < 510 ? 'w-[400px]' : windowWidth < 700 ? 'w-[550px]' : 'w-[700px]'}`}
+        className={`h-11 items-center rounded-full bg-primary-color ${windowWidth < 510 ? 'w-[390px]' : windowWidth < 700 ? 'w-[550px]' : 'w-[700px]'}`}
         style={{
           display: 'flex',
           position: 'fixed',
