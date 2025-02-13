@@ -24,7 +24,7 @@ export default function PhilosophyLayout(): React.JSX.Element {
           }}
           preview={false}
           width={windowWidth < 400 ? 400 : 800}
-          height={windowWidth < 400 ? 320 : 500}
+          height={windowWidth < 770 ? 320 : 500}
           src="https://images.unsplash.com/photo-1618388810903-840bb0d15ea5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
       </Col>
