@@ -81,7 +81,7 @@ export default function Home(): React.JSX.Element {
         <PhilosophyLayout />
       </Row>
 
-      <Row className="mx-[20px] md:mx-[60px] lg:mx-[80px] flex flex-row gap-6" id="skillset">
+      <Row className="mt-[150px] mx-[20px] md:mx-[60px] lg:mx-[80px] xl:mx-[20px] xl:mt-[20px] flex flex-row gap-6" id="skillset">
         <Skills />
       </Row>
 

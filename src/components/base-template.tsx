@@ -1,14 +1,16 @@
 'use client'
 
-import { DownOutlined, MenuOutlined } from "@ant-design/icons";
+import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown, Layout, Menu, MenuProps, Space } from "antd";
 import { Footer, Header } from "antd/es/layout/layout";
 import Link from "next/link";
 import { WindowWidth } from "./layouts/window-width";
+import { GoToTopButton } from "./back-to-top";
 
 export interface IPortals {
   children: any
 }
+
 export default function BaseTemplate(props: IPortals): React.JSX.Element {
   const windowWidth: number = WindowWidth()
 
@@ -104,6 +106,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
       <Layout className="min-h-screen bg-base-color">
         {props?.children}
       </Layout>
+      <GoToTopButton />
       <Footer className='bg-base-color text-white' style={{ textAlign: 'center' }}>
         Efektenang ©{new Date().getFullYear()} Made with ❤️
       </Footer>

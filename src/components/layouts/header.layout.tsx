@@ -34,7 +34,7 @@ export default function HeaderLayout(): React.JSX.Element {
             <br />
             <span className="text-gray-400">based in Indonesia.</span>
           </h1>
-          <p className="text-white mt-5 w-[350px] lg:w-[640px] xl:w-[830px] text-sm lg:text-lg">I am a Full-stack developer with expertise in Laravel, Node.js and Next.Js.
+          <p className="text-white mt-5 w-[350px] lg:w-[640px] xl:w-[830px] text-sm lg:text-lg">I am a Full-stack Web developer with expertise in Laravel, Node.js and Next.Js.
             I have experience in developing scalable, secure, and reliable web applications using various frameworks and technologies.
             I enjoy solving complex problems and am always enthusiastic about learning new skills.</p>
         </div>
