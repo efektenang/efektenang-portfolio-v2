@@ -15,12 +15,12 @@ export default function HeaderLayout(): React.JSX.Element {
         <Image
           style={{
             objectFit: 'cover',
-            objectPosition: '10% 40%'
+            objectPosition: '10% 4%'
           }}
           preview={false}
-          width={windowWidth < 810 ? 600 : 700}
-          height={windowWidth < 550 ? 300 : 500}
-          src="https://res.cloudinary.com/dpr6tofwx/image/upload/v1731404289/yjm16gd2pzh7hlsjhmav.jpg"
+          width={windowWidth < 810 ? 550 : 850}
+          height={windowWidth < 550 ? 450 : 600}
+          src="https://res.cloudinary.com/dpr6tofwx/image/upload/v1751616813/header-no-bg_tcbk5r.png"
         />
       </Col>
       <Col xxl={12} xl={12} lg={12} md={13} sm={24} className="flex justify-items-center items-center" style={{
