@@ -1,7 +1,7 @@
 'use client'
 
 import { Col, Image } from 'antd'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { WindowWidth } from './layouts/window-width'
 
 export default function PhilosophyLayout(): React.JSX.Element {

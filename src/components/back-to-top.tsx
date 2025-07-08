@@ -1,3 +1,5 @@
+"use client"
+
 import { ArrowUpOutlined } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 

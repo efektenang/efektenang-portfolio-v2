@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown, Layout, Menu, MenuProps, Space } from "antd";
@@ -6,6 +6,7 @@ import { Footer, Header } from "antd/es/layout/layout";
 import Link from "next/link";
 import { WindowWidth } from "./layouts/window-width";
 import { GoToTopButton } from "./back-to-top";
+import ModalCustom from "./custom-modal";
 
 export interface IPortals {
   children: any
@@ -14,10 +15,17 @@ export interface IPortals {
 export default function BaseTemplate(props: IPortals): React.JSX.Element {
   const windowWidth: number = WindowWidth()
 
+  const scrollTo = (size: number) => {
+    window.scrollTo({
+      top: size,
+      behavior: 'smooth'
+    });
+  };
+
   const items1: MenuProps['items'] = [
     {
       "key": "1",
-      "label": <Link href={'#home'}>Home</Link>,
+      "label": <h1 onClick={() => scrollTo(0)}>Home</h1>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -26,7 +34,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "5",
-      "label": <Link href={'#experience'}>Experiences</Link>,
+      "label": <h1 onClick={() => scrollTo(700)}>Experiences</h1>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -35,7 +43,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "2",
-      "label": <Link href={'#about'}>About</Link>,
+      "label": <h1 onClick={() => scrollTo(1800)}>About</h1>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -44,7 +52,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "3",
-      "label": <Link href={'#projects'}>Projects</Link>,
+      "label": <h1 onClick={() => scrollTo(2650)}>Projects</h1>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -53,7 +61,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
     },
     {
       "key": "4",
-      "label": <Link href={'#contact'}>Contact Me</Link>,
+      "label": <h1 onClick={() => scrollTo(3400)}>Contact Me</h1>,
       "style": {
         "lineHeight": "25px",
         "borderRadius": 20,
@@ -110,6 +118,7 @@ export default function BaseTemplate(props: IPortals): React.JSX.Element {
       <Footer className='bg-base-color text-white' style={{ textAlign: 'center' }}>
         Efektenang ©{new Date().getFullYear()} Made with ❤️
       </Footer>
+      {windowWidth < 510 && <ModalCustom isOpen={true} />}
     </Layout>
   )
 }
