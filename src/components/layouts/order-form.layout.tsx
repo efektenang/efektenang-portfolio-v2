@@ -35,7 +35,7 @@ export default function OrderFormLayout(): React.JSX.Element {
     <>
       <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
         <LabelInputContainer className='w-full'>
-          <Label htmlFor="name">Name</Label>
+          <Label htmlFor="name" className='text-white'>Name</Label>
           <Input
             id="name"
             placeholder="Place your name"
@@ -48,7 +48,7 @@ export default function OrderFormLayout(): React.JSX.Element {
           />
         </LabelInputContainer>
         <LabelInputContainer className='w-full'>
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email" className='text-white'>Email</Label>
           <Input
             id="email"
             placeholder="example@email.com"
@@ -61,7 +61,7 @@ export default function OrderFormLayout(): React.JSX.Element {
           />
         </LabelInputContainer>
         <LabelInputContainer className='w-full'>
-          <Label htmlFor="message">Message</Label>
+          <Label htmlFor="message" className='text-white'>Message</Label>
           <Input
             id="message"
             placeholder="What will we plan..."
