@@ -4,7 +4,8 @@ import { CodeOutlined } from "@ant-design/icons";
 import { Image } from "antd";
 import jadwalKuliah from "@/assets/images/jadwal-kuliah.png"
 import animeHub from "@/assets/images/anime-hub.png"
-import danmogotCheckout from "@/assets/images/danmogot-checkout.png"
+import simbimawaImage from "@/assets/images/simbimawa.png"
+import otherProject from "@/assets/images/otherproject.jpg"
 import mriImage from "@/assets/images/mri.png"
 
 export function ProjectLayout() {
@@ -30,11 +31,11 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "Danmogot Checkout Web",
-    description: "Marketplace website for ordering products at the Danmogot shop.",
-    header: <Image src={danmogotCheckout.src} className="rounded-xl" />,
+    title: "SIM-BIMAWA UMSU",
+    description: "Application to organize and record outstanding students, student activities, and scholarships.",
+    header: <Image src={simbimawaImage.src} className="rounded-xl" />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
-    // url: 'https://checkout.danmogot.com/portal/cart'
+    // url: 'https://anime-hub-red.vercel.app/'
   },
   {
     title: "Anime Hub",
@@ -60,7 +61,7 @@ const items = [
   {
     title: "Other repository projects",
     description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
+    header: <Image src={otherProject.src} className="rounded-xl" preview={false} height={140} />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
     url: 'https://github.com/efektenang?tab=repositories'
   }

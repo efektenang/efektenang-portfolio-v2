@@ -1,24 +1,30 @@
 [
   {
     "id": "01",
+    "company": "Biro Sistem Teknologi Informasi",
+    "position": "IT Programmer",
+    "description": "The Information Technology Systems Bureau is an IT department located on the campus of the Muhammadiyah University of North Sumatra."
+  },
+  {
+    "id": "02",
     "company": "PT Raksasa Indonesia",
     "position": "Fullstack Web Dev",
     "description": "I currently am the lead Fullstack Dev on the interaction design team for organizations."
   },
   {
-    "id": "02",
+    "id": "03",
     "company": "Bangkit Academy",
     "position": "Student",
     "description": "Participating in the 'Kampus Merdeka', Cloud Computing Learning Path Student program 2022"
   },
   {
-    "id": "03",
+    "id": "04",
     "company": "BSI UMSU",
     "position": "Web Developer",
     "description": "The Information Systems Bureau is an IT department located on the campus of the Muhammadiyah University of North Sumatra"
   },
   {
-    "id": "04",
+    "id": "05",
     "company": "BSI UMSU",
     "position": "IT Support",
     "description": "The Information Systems Bureau is an IT department located on the campus of the Muhammadiyah University of North Sumatra"
