@@ -3,7 +3,7 @@ import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import { CodeOutlined } from "@ant-design/icons";
 import { Image } from "antd";
 import jadwalKuliah from "@/assets/images/jadwal-kuliah.png"
-import animeHub from "@/assets/images/anime-hub.png"
+import admission from "@/assets/images/admission.png"
 import simbimawaImage from "@/assets/images/simbimawa.png"
 import otherProject from "@/assets/images/otherproject.jpg"
 import mriImage from "@/assets/images/mri.png"
@@ -38,11 +38,11 @@ const items = [
     // url: 'https://anime-hub-red.vercel.app/'
   },
   {
-    title: "Anime Hub",
-    description: "Application to display the latest anime list using Next.js.",
-    header: <Image src={animeHub.src} className="rounded-xl" />,
+    title: "UMSU Admission APP",
+    description: "Web application for registration and system management.",
+    header: <Image src={admission.src} className="rounded-xl" />,
     icon: <CodeOutlined className="h-4 w-4 text-neutral-500" />,
-    url: 'https://anime-hub-red.vercel.app/'
+    url: 'https://daftar.umsu.ac.id/'
   },
   {
     title: "Aplikasi Penjadwalan Kelas",
